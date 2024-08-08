@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Simple House</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">    
+        <style>
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 50px auto;
+            }
+            .wall{
+                width: 500px;
+                height: 260px;
+                border: solid 1px black;
+                background-image: linear-gradient(rgb(107, 68, 41), rgb(170, 113, 65), rgb(107, 68, 41), rgb(170, 113, 65), rgb(107, 68, 41));
+            }
+            .roof{
+                width: 0;
+                height: 0;
+                margin-left: -48px;
+                border-bottom: 200px solid;
+                border-color: rgb(150, 96, 53);
+                border-left: 290px solid transparent;
+                border-right: 300px solid transparent;
+            }
+            .window{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                border: solid 1px black;
+                background-color: rgb(194, 127, 73);
+                margin-left: 190px;
+                margin-top: -134px;
+                margin-bottom: 31px;
+            }
+            .door{
+                width: 150px;
+                height: 180px;
+                border-left: solid 1px black;
+                border-right: solid 1px black;
+                border-top: solid 1px black;
+                margin-top: -184px;
+                margin-left: 175px;
+                background-image: linear-gradient(rgb(223, 144, 79), rgb(150, 96, 53), rgb(223, 144, 79), rgb(150, 96, 53));
+            }
+            .door-knob{
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                border: solid 1px black;
+                background-color: rgb(134, 86, 46);
+                margin-left: 185px;
+                margin-top: -85px;
+                margin-bottom: 31px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="house"> 
+            <div class="roof"></div>
+            <div class="window"></div>
+            <div class="wall"></div>
+            <div class="door"></div>
+            <div class="door-knob"></div>
+        </div>
+    </body>
+</html>
